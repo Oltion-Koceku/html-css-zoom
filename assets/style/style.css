@@ -1,79 +1,115 @@
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 /* utility */
 /* .debug{
 border:2px solid black;
 } */
 
-main{
-height: calc(100vh-100px);
-background-color: black;
-overflow: auto;
+main {
+  height: calc(100vh-100px);
+  background-color: black;
+  overflow: auto;
 }
 
-footer{
-height: 85px;
+footer {
+  height: 85px;
 }
 
-.container{
-margin: 0 auto;
-max-width: 1820px;
-padding-top: 50px;
-width: 99%;
+.container {
+  margin: 0 auto;
+  max-width: 1820px;
+  padding-top: 50px;
+  width: 99%;
 
 }
 
-.d-flex{
+.fa-solid{
+
+}
+
+.d-flex {
   display: flex;
   flex-wrap: wrap;
 }
 
-.p-relative{
-position: relative;
+.p-relative {
+  position: relative;
 }
+
 /* header */
 /* main */
-.container .icon{
-width: calc(100% / 7);
-margin: 20px 0px;
+.container .icon {
+  width: calc(100% / 7);
+  margin: 20px 0px;
 
 }
-.container .icon .name-user{
-position: absolute;
-bottom: 4px;
-display: inline-block;
+
+.container .icon .name-user {
+  position: absolute;
+  bottom: 4px;
+  display: inline-block;
 }
 
-.container .icon .name-user span{
+.container .icon .name-user span {
   width: 110px;
   display: inline-block;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   padding: 4px;
   color: white;
 }
+
 /* footer */
-footer .bar{
-justify-content: space-between;
-width: 100%;
-align-items: center;
+footer .bar {
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
 
 }
 
-footer .bar .video-audio{
-width: 250px;
-height: 100px;
-justify-content: center;
-align-items: center;
+footer .bar .video-audio {
+  width: 190px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
+
 /* audio */
-footer .bar .video-audio .audio{
-width: 50px;
-font-size: 17px;
+footer .bar .video-audio .audio {
+  width: 50px;
+  font-size: 17px;
 }
-footer .bar .video-audio .audio .fa-solid{
-font-size: 47px;
+
+footer .bar .video-audio .audio .fa-solid {
+  font-size: 47px;
 }
+
+footer .bar .video-audio .fa-solid.fa-angle-up {
+  padding-right: 15px;
+}
+
 /* video */
+footer .bar .video-audio .video{
+  width: 78px;
+  font-size: 17px;
+}
+footer .bar .video-audio .video .fa-solid {
+  font-size: 47px;
+}
+
+/* more */
+.more span .fa-solid,.fa-regular{
+font-size: 45px;
+}
+
+.more span .fa-solid.fa-angle-up{
+font-size: 20px;
+}
+
+.more span{
+padding-right: 35px;
+}
