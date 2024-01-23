@@ -13,13 +13,19 @@ main {
   height: calc(100vh-100px);
   background-color: black;
   overflow: auto;
+  padding-bottom: 100px;
 }
 
 footer {
   height: 100px;
-  z-index: 999;
-  position: fixed;
+  /* z-index: 999;
+  position: fixed; */
   width: 100%;
+}
+
+header{
+height: 35px;
+background-color: black;
 }
 
 .container {
@@ -27,10 +33,6 @@ footer {
   max-width: 1820px;
   padding-top: 50px;
   width: 99%;
-
-}
-
-.fa-solid{
 
 }
 
@@ -44,6 +46,28 @@ footer {
 }
 
 /* header */
+.top{
+justify-content: end;
+color: white;
+position: fixed;
+z-index: 999;
+right: 0;
+}
+
+.top .speaker{
+  background-color: #4a4a4a;
+  padding: 6px;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+.top .grande{
+  background-color: #4a4a4a;
+  padding: 6px;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-left: 8px;
+  margin-right: 6px;
+}
 /* main */
 .container .icon {
   width: calc(100% / 7);
@@ -73,6 +97,10 @@ footer .bar {
   background-color: #222222;
   color: white;
 
+}
+
+footer .bar div span i:hover{
+color: green;
 }
 
 footer .bar .video-audio {
@@ -129,6 +157,10 @@ width: 65px;
 text-align: center;
 display: inline-block;
 align-items: center;
+}
+
+.more span .fa-solid .fa-share-from-square{
+color: green;
 }
 /* end */
 .end{
