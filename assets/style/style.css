@@ -8,16 +8,22 @@ box-sizing: border-box;
 border:2px solid black;
 } */
 
-/* main{
-height: 100vh;
+main{
+height: calc(100vh-100px);
 background-color: black;
-} */
+overflow: auto;
+}
+
+footer{
+height: 85px;
+}
 
 .container{
 margin: 0 auto;
 max-width: 1820px;
 padding-top: 50px;
 width: 99%;
+
 }
 
 .d-flex{
@@ -49,3 +55,25 @@ display: inline-block;
   color: white;
 }
 /* footer */
+footer .bar{
+justify-content: space-between;
+width: 100%;
+align-items: center;
+
+}
+
+footer .bar .video-audio{
+width: 250px;
+height: 100px;
+justify-content: center;
+align-items: center;
+}
+/* audio */
+footer .bar .video-audio .audio{
+width: 50px;
+font-size: 17px;
+}
+footer .bar .video-audio .audio .fa-solid{
+font-size: 47px;
+}
+/* video */
