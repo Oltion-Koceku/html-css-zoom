@@ -3,3 +3,49 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
+/* utility */
+/* .debug{
+border:2px solid black;
+} */
+
+/* main{
+height: 100vh;
+background-color: black;
+} */
+
+.container{
+margin: 0 auto;
+max-width: 1820px;
+padding-top: 50px;
+width: 99%;
+}
+
+.d-flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.p-relative{
+position: relative;
+}
+/* header */
+/* main */
+.container .icon{
+width: calc(100% / 7);
+margin: 20px 0px;
+
+}
+.container .icon .name-user{
+position: absolute;
+bottom: 4px;
+display: inline-block;
+}
+
+.container .icon .name-user span{
+  width: 110px;
+  display: inline-block;
+  background-color: rgba(0,0,0,0.4);
+  padding: 4px;
+  color: white;
+}
+/* footer */
