@@ -10,7 +10,7 @@ border:2px solid black;
 } */
 
 main {
-  height: calc(100vh - 135px);
+  height: calc(100vh - 115px);
   background-color: black;
   overflow: auto;
 }
@@ -20,6 +20,7 @@ footer {
   width: 100%;
   position: fixed;
   z-index: 9999;
+  color: white;
 }
 
 header{
@@ -72,7 +73,8 @@ right: 0;
   width: calc(100% / 7);
   margin: 6px 0px;
   padding-bottom: 5px;
-
+  min-width: 230px;
+  aspect-ratio: 16 / 9;
 }
 
 .container .icon .name-user {
@@ -90,95 +92,55 @@ right: 0;
 }
 
 /* footer */
-footer .bar {
-  justify-content: space-between;
-  width: 100%;
-  align-items: center;
+footer{
   background-color: #222222;
-  color: white;
-
-}
-
-footer .bar div span i:hover{
-color: green;
-}
-
-footer .bar .video-audio {
-  width: 190px;
-  height: 100px;
-  justify-content: center;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  text-align: center;
 }
 
-/* audio */
-footer .bar .video-audio .audio {
-  width: 50px;
-  font-size: 17px;
+.footer-left, 
+.footer-center, 
+.footer-right{
+  height: 100%;
 }
 
-footer .bar .video-audio .audio .fa-solid {
-  font-size: 47px;
+.footer-left, 
+.footer-center{
+  display: flex;
+  flex-shrink: 0;
 }
 
-footer .bar .video-audio .fa-solid.fa-angle-up {
-  padding-right: 15px;
-}
-
-/* video */
-footer .bar .video-audio .video{
-  width: 78px;
-  font-size: 17px;
-}
-footer .bar .video-audio .video .fa-solid {
-  font-size: 47px;
-}
-
-/* more */
-
-.more{
-justify-content: space-between;
-display: ;
-}
-.more span .fa-solid,.fa-regular{
-font-size: 45px;
-text-align: center;
-align-items: center;
-}
-
-.more span .fa-solid.fa-chevron-up{
-font-size: 20px;
-width: 20px;
-}
-
-.more span {
-padding-right: 35px;
-width: 65px;
-text-align: center;
-display: inline-block;
-align-items: center;
-}
-
-.more span .fa-solid .fa-share-from-square{
-color: green;
-}
-/* end */
-.end{
-  background-color: #4a4a4a;
-  width: 150px;
-  height: 100px;
-  justify-content: center;
+footer .icon{
+  height: 100%;
+  padding: 12px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-
+  cursor: pointer;
 }
-.end span{
-  padding: 20px;
-  font-size: 20px;
+
+footer .icon i{
+  font-size: 1.7rem;
+}
+
+footer .icon i.fa-angle-up{
+  font-size: 1rem;
+}
+
+footer .icon:hover i,
+footer .icon.active i{
+  color:  green;
+}
+
+.footer-right button{
+  height: 100%;
+  padding: 15px;
+  background-color: #4A4A4A;
   color: red;
-}
-
-.fa-solid.fa-share-from-square{
-color: green;
-
+  border: 0;
+  cursor: pointer;
 }
 
